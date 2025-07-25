@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Easy Gift - History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="user-info">
+            <img id="user-photo" src="https://placehold.co/48x48/f6a828/ffffff?text=U" alt="Аватар" class="rounded-full">
+            <div>
+                <h1 id="user-name" class="font-bold text-lg">Username</h1>
+                <p id="user-balance" class="text-sm text-gray-400" data-lang="balance_stars">Balance: 0 stars</p>
+            </div>
+        </div>
+        <div class="controls">
+             <button id="lang-switcher" class="lang-switcher">RU</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2 class="text-xl font-bold mb-4" data-lang="history_title">История дропов</h2>
+        <div id="history-list" class="history-list">
+            <!-- Сюда будет динамически добавляться история -->
+            <p class="text-gray-400" data-lang="history_empty">Ваша история пока пуста.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="footer-btn" data-page="index"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 19H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M12 15V9"/><path d="M8 11h8"/><path d="M10 19h4"/><path d="M12 19v-4"/></svg><span data-lang="nav_home">Home</span></a>
+        <a href="upgrade.html" class="footer-btn" data-page="upgrade"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg><span data-lang="nav_upgrade">Upgrade</span></a>
+        <a href="#" class="footer-btn" data-page="leaders"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-lang="nav_leaders">Leaders</span></a>
+        <a href="profile.html" class="footer-btn" data-page="profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span data-lang="nav_profile">Profile</span></a>
+        <a href="history.html" class="footer-btn active" data-page="history"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg><span data-lang="nav_history">History</span></a>
+    </footer>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="js/cases.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
